@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "RepVue LinkedIn Bridge",
+  "version": "1.0",
+  "description": "One-click access to RepVue scores from LinkedIn",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.linkedin.com/company/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
+
